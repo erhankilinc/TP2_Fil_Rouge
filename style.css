@@ -9,33 +9,225 @@ header{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    
-}
-class=icons{
-
+    padding: 20px ;
+    position: relative;
 }
 
-ul{
-    padding: 0;
-    width: 100%;
-    
 
+.icons{
+    display: flex;
+    gap: 15px;
+    top: 45px;
+    position: absolute;
+    right: 40px;
 }
-
-li{
-    display: inline;
-}
-
-a{
-    outline: none;
-    text-decoration: none;
-    display: inline-block;
-    width: 15%;
-    margin-right: 0.002;
-    text-align: center;
-    line-height: 3;
+.icons a{
     color: white;
-
+    font-size: 20px;
 }
 
 
+.introduction{
+    padding: 50px 40px;
+    text-align: left;
+    margin: 0;
+    max-width: 1200px;
+}
+
+
+.introduction h2{
+    font-size: 42px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.introduction div{
+    line-height: 1.5;
+    font-size: 25px;
+    color: #5b6a71;
+}
+
+.introduction span{
+    color: rgb(23, 222,168);
+}
+
+
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px 0;
+    gap: 5px;
+    justify-content: center;
+}
+.menu a {
+    padding: 5px 10px;
+    white-space: nowrap;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+.menu portrait{
+    background-color: #1bd79e;
+}
+.foto{
+    gap: 10px;
+    display: grid;
+}
+.foto img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+footer p{
+    color: #5b6a71;
+    text-align: centers;
+}
+
+
+
+
+@media (min-width: 1024px) {
+    header {
+        padding: 20px;
+        justify-content: space-between;
+    }
+ 
+   
+    body {
+        margin: 0 5%;
+    }
+ 
+    .introduction {
+        padding: 60px 100px;
+        max-width: 100%;
+        text-align: left;
+    }
+ 
+    .introduction h2 {
+        font-size: 42px;
+    }
+ 
+    .introduction div{
+        color: #5b6a71;
+    }
+ 
+    .foto {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    .menu {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+ 
+    .menu a {
+        margin: 0 20px;
+        font-size: 16px;
+    }
+    .menu #portrait{
+        background-color: #1bd79e;
+    }
+ 
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666666;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {/*configuration en mode tablette*/
+    header {
+        padding: 20px;
+        justify-content: space-between;
+    }
+ 
+    
+    body {
+        margin: 0 3%;
+    }
+ 
+    .introduction {
+        padding: 40px 50px;
+        max-width: 100%;
+    }
+
+    .menu #portrait{
+        background-color: #1bd79e;
+    }
+ 
+    .foto {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    body {
+      margin: 0 5%;
+   }
+ 
+    h1 {
+        margin-bottom: 20px;
+    }
+ 
+    .icons {
+        justify-content: center;
+        margin-top: 10px;
+        position: static;
+       
+    }
+ 
+    .introduction {
+        padding: 30px 20px;
+        text-align: left;
+        max-width: 100%;
+    }
+ 
+    .introduction h2 {
+        font-size: 30px;
+    }
+ 
+    .introduction div; {
+        font-size: 16px;
+        color: #5b6a71;
+    }
+ 
+    .foto {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+ 
+    /*la configuration */
+    .menu {
+        gap: 3px;
+        padding: 5px 0;
+    }
+ 
+    .menu a {
+        font-size: 9px;
+        padding: 2px 4px;
+    }
+
+    .menu #portrait{
+        background-color: #1bd79e;
+    }
+    footer{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #666666;
+        }
+    }
+}
