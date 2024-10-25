@@ -50,7 +50,7 @@ header{
 
 .introduction div{
     line-height: 1.5;
-    font-size: 25px;
+    font-size: 15px;
     color: #5b6a71;
 }
 
@@ -116,6 +116,7 @@ footer p{
  
     .introduction div{
         color: #5b6a71;
+        font-size: 15px;
     }
  
     .foto {
@@ -204,7 +205,7 @@ footer p{
     }
  
     .introduction div; {
-        font-size: 16px;
+        font-size: 10px;
         color: #5b6a71;
     }
  
